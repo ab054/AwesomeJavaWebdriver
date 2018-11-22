@@ -25,6 +25,12 @@ public class GoogleSearch {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
+
+    @Test
+    public void testHomeWork() {
+        //TODO: automate search at Yahoo.com
+    }
+
     @Test
     public void testSearch() {
         String queryString = "Portnov School";
@@ -48,6 +54,8 @@ public class GoogleSearch {
     private void assertResults() {
         WebElement resultStatsElement = driver.findElement(By.id("resultStats"));
         String textFromResults = resultStatsElement.getText();
+
+        //TODO: change assertions
         String expectedText = "About 196,000 results (0.40 seconds) ";
         String actualText = textFromResults;
         Assert.assertEquals(actualText, expectedText);
