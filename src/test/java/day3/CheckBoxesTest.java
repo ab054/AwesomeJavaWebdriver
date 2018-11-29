@@ -17,11 +17,11 @@ public class CheckBoxesTest {
     By checkBox1 = By.cssSelector("#checkboxes > input:nth-child(1)");
 
 
-    @BeforeSuite
-    public void suiteSetup(){
-        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\geckodriver.exe");
-        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+     @BeforeSuite
+        public void suiteSetup(){
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\geckodriver.exe");
+            driver = new FirefoxDriver();
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
 
