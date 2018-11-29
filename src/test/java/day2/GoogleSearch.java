@@ -73,6 +73,7 @@ public class GoogleSearch {
 
     private void openMainPage() {
         driver.get("http://google.com");
+        Tools.waitForPageLoaded(driver);
     }
 
     public void explicitWait(WebDriver driver){
