@@ -1,4 +1,4 @@
-package day3;
+package day4;
 
 import day2.Tools;
 import org.openqa.selenium.By;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class YahooSearch {
+public class YahooSearchTest {
 
     WebDriver driver;
 
