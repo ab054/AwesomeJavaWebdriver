@@ -30,7 +30,7 @@ public class YahooSearchTest extends BaseTest{
                 .findElement(By.className("compPagination")).findElement(By.tagName("span"));
 
 
-       String xpathValue = "";
+       String xpathValue = "//*[@class='compPagination']/span";
        String cssValue = "div.compPagination span";
        By resultsElement = By.xpath(xpathValue);
 
