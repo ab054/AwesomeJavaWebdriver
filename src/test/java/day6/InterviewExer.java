@@ -57,5 +57,8 @@ public class InterviewExer {
         return result;
     }
 
-
+    @Test
+    public void test_Actor() {
+        Actor actor = new Actor("Alex", "Barabash");
+    }
 }
