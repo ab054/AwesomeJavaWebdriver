@@ -7,8 +7,6 @@ import org.testng.annotations.Test;
 
 public class YahooSearchTest extends BaseTest{
 
-    By searchBox = By.id("uh-search-box");
-
     @Test
     public void testSearch() {
         String queryString = "Portnov School";
@@ -16,8 +14,8 @@ public class YahooSearchTest extends BaseTest{
 
 
         openPage(url);
-        sendKeysTo(searchBox, queryString);
-        submitSearch(searchBox);
+        sendKeysTo(YahooMainPage.searchBox, queryString);
+        submitSearch(YahooMainPage.searchBox);
         assertResults();
     }
 
@@ -37,4 +35,10 @@ public class YahooSearchTest extends BaseTest{
        explicitWait(driver, By.cssSelector(cssValue));
        Assert.assertTrue(resultSpanElement.isDisplayed());
     }
+
+    public void submitSearch(By element) {
+       // gbdgfhndfgndgfnd
+    }
+
+
 }

@@ -35,6 +35,11 @@ public class BaseTest {
         Tools.waitForPageLoaded(driver);
     }
 
+    public void openPage() {
+        driver.get("http://google.com");
+        Tools.waitForPageLoaded(driver);
+    }
+
     public void submitSearch(By element) {
         System.out.println("submitting query in element:" + element.toString());
         driver.findElement(element).submit();
